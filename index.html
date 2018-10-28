@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Process Journal</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" data-aos="fade" data-aos-duration="1000">
+            <div class="container"><a class="navbar-brand" href="#">Adam V</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#concept">Concept</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#brainstorming">Brainstorming</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Prototyping&nbsp;</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#v1">V1</a><a class="dropdown-item" role="presentation" href="#v2">V2</a><a class="dropdown-item" role="presentation" href="#v3">V3</a><a class="dropdown-item" role="presentation"
+                                    href="#v4">V4</a></div>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#reflection">Reflection</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://perrindesign.github.io/design-portfolio/companion.html">Companion Site</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 20%;"><img src="assets/img/AiraLogo.svg" width="25%" data-aos="fade" data-aos-duration="2500" data-aos-delay="100" style="margin-left: 38%;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="padding-top: 4%;">
+                    <h1 class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000" style="font-family: Roboto, sans-serif;font-style: normal;font-weight: bold;font-size: 50px;">The Design and Development of Aira<br>- The Process</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8"><img src="assets/img/lilium-jet-flying.jpg" width="163%" style="margin-left: -40px;"></div>
+                <div class="col-md-4" style="background-color: rgba(0,0,0,0.5);">
+                    <p id="concept" class="#Concept" style="font-family: Roboto, sans-serif;font-weight: bold;color: rgb(255,255,255);font-size: 64px;">Initial Concept:</p>
+                    <p style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-size: 28px;margin-left: 20px;">Commercial aerial autonomous vehicles as a means for multi-modal transportation. <br><br>Reducing noise and pollution, while increasing people's quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;font-size: 55px;font-weight: bold;padding-bottom: 40px;">Existing Infrastructure</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000"><img src="assets/img/sydney-train-service-800.jpg" width="100%" style="height: 200px;">
+                    <p class="text-center" style="padding-top: 40px;font-family: Roboto, sans-serif;font-size: 30px;">Public Transportation</p>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Current city infrastructure has several issues, and part of the goal of my research was to gather data that tells us what people currently like and dislike about public transport in their city; and aim to provide all of the positives,
+                        and minimise as many negatives as we possibly can.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="2500"><img class="rounded-circle" src="assets/img/uber-serp-logo-f6e7549c89.jpg" width="100%" style="width: 200px;margin-left: 60px;">
+                    <p class="text-center" style="padding-top: 40px;font-size: 30px;font-family: Roboto, sans-serif;">Uber</p>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Uber's Elevate project aims to have test flights running within the next few years, meaning this form of autnomous air-taxi service is on it's way to major cities, and validate's a lot of our research and design.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000"><img src="assets/img/front-lights-view-1_0.jpg" width="100%" style="height: 200px;">
+                    <p class="text-center" style="padding-top: 40px;font-size: 30px;font-family: Roboto, sans-serif;">Waymo + Tesla</p>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Self driving technologies such as Google's Waymo and Tesla's line of electric cars are looking forward to what personal transport might be like in the future.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 50px;">Research</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-size: 20px;font-family: Roboto, sans-serif;">I interviewed 5 users of Sydney transport, including users of Uber. I chose to interview these people in order to guage public opinion on the various types of public transportation available in Sydney. This helped me gain deep insight
+                        into their experiences and develop empathy for the people I am designing a solution for.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;padding-bottom: 10px;">In order to gather some initial quantitative public opinion data on the current state of Urban Transportation in Sydney, I ran a quick 1-minute questionnaire by people at wharfs, bus stops and train stations.&nbsp;</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-size: 20px;font-family: Roboto, sans-serif;">Most people I interviewed referenced peak hour commutes, it was harder to find opinions about off-hour experiences, so I chose to do a contextual observation just before and after peak hour conditions in order to get accurate data
+                        from natural user behaviour for that time period.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="padding-bottom: 0px;font-family: Roboto, sans-serif;font-size: 50px;">Personas</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 0px;">
+        <div class="container">
+            <div class="row" style="padding-bottom: 200px;">
+                <div class="col-md-4"><img src="assets/img/PERSONA%20JEMIMAH.png" width="100%"></div>
+                <div class="col-md-4"><img src="assets/img/PERSONA%20MITCHELL.png" width="100%"></div>
+                <div class="col-md-4"><img src="assets/img/PERSONA%20ELIZA.png" width="100%"></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;font-size: 50px;">Storyboard</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/Storyboard%20Bus%20Eliza.png" width="100%"></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;font-size: 50px;">User Journey Map</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/USER%20JOURNEY%20MAP.png" width="100%"></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container" style="padding-bottom: 200px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;font-size: 50px;">Affinity Diagram</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-1" style="max-height: none;">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/affinity%20diagram.jpg" alt="Slide Image">
+                                <div class="carousel-caption">
+                                    <h3 style="font-family: Roboto, sans-serif;font-weight: bold;">Click through to see close-ups</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/dependable%20and%20secure.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/dont%20want%20to%20spend%20excess.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Point%20A%20to%20b%20Quickly.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/want%20to%20feel%20good.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Reliable.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Destination%20quickly.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/avoid%20spending%20money%20if%20destination%20close.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Convenient.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/feel%20safe.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/good%20mood.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/less%20crowded%20more%20comfortable.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Less%20expensive.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-1" data-slide-to="3"></li>
+                            <li data-target="#carousel-1" data-slide-to="4"></li>
+                            <li data-target="#carousel-1" data-slide-to="5"></li>
+                            <li data-target="#carousel-1" data-slide-to="6"></li>
+                            <li data-target="#carousel-1" data-slide-to="7"></li>
+                            <li data-target="#carousel-1" data-slide-to="8"></li>
+                            <li data-target="#carousel-1" data-slide-to="9"></li>
+                            <li data-target="#carousel-1" data-slide-to="10"></li>
+                            <li data-target="#carousel-1" data-slide-to="11"></li>
+                            <li data-target="#carousel-1" data-slide-to="12"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;">Reflections on Research phase</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-size: 20px;font-family: Roboto, sans-serif;padding-bottom: 0px;">I’ve collected and analysed a lot of data regarding the current percieved state of Sydney’s transport system. I have uncovered needs that are yet to be met by what both the public and private sectors are currently providing, and revealed
+                        key insights into what people like and dislike about their current commute. The interview stage was by far the most enlightening research and left me with a lot of qualitative data to work with. Using the affinity diagram I was
+                        able to synthesise it down into identifiable user needs. The other forms of research were less enlightening after conducting interviews as they seemed to mostly echo the data I had already acquired, or provide me with simply behavioural
+                        data that may come in use later on. In the future I would definately like to storyboard the experiences of other personas in order to create a more complete overview of the transport ecosystem. Finally, my research into Uber’s
+                        Elevate project has given me great anticipation and inspiration to get started on the next steps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="padding-bottom: 50px;font-family: Roboto, sans-serif;">The other members of the team analysed:</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;font-style: normal;font-size: 30px;">What aspects of multi-modal transport to commuters prioritise?</h1>
+                    <p style="font-family: Roboto, sans-serif;">Currently multi-modal transport does not provide enough choice, efficiency or wayfinding. How might we create the ideal door to door experience?<br></p>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;font-size: 30px;">What is the relationship between lengthy commuting and quality of life?</h1>
+                    <p style="font-family: Roboto, sans-serif;">Lengthy commuters suffer greatest from a constant lack of time that affects all aspects of their lives. How might we restore ownership of time back to commuters?<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" id="brainstorming" style="font-family: Roboto, sans-serif;font-size: 60px;font-weight: bold;padding-bottom: 50px;">Brainstorming</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="font-size: 50px;font-family: Roboto, sans-serif;">Original Ideas</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"><img src="assets/img/unnamed-7.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraHealth</h1>
+                    <p style="font-family: Roboto, sans-serif;">Autonomous drones connecting patients and their families with doctors and hospitals.<br></p>
+                </div>
+                <div class="col-md-3"><img src="assets/img/unnamed-6.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraDrop</h1>
+                    <p style="font-family: Roboto, sans-serif;">Peer to Peer delivery drone service directly connecting senders and receivers.<br></p>
+                </div>
+                <div class="col-md-3"><img src="assets/img/unnamed-5.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraScenic</h1>
+                    <p style="font-family: Roboto, sans-serif;">Automated drone tours providing world class aerial views for locals and tourists alike.<br></p>
+                </div>
+                <div class="col-md-3"><img src="assets/img/unnamed-4.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraFar</h1>
+                    <p style="font-family: Roboto, sans-serif;">Long distance autonomous drones that can cover large distances quickly.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><img src="assets/img/unnamed-3.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraSolo</h1>
+                    <p style="font-family: Roboto, sans-serif;">An ondemand autonomous passenger drone service.<br></p>
+                </div>
+                <div class="col-md-3"><img src="assets/img/unnamed-2.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraShare</h1>
+                    <p style="font-family: Roboto, sans-serif;">An autonomous rideshare drone service with a focus on sociability.<br></p>
+                </div>
+                <div class="col-md-3"><img src="assets/img/unnamed-1.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraRural</h1>
+                    <p style="font-family: Roboto, sans-serif;">Autonomous drone service connecting rural areas with cities.<br></p>
+                </div>
+                <div class="col-md-3"><img src="assets/img/unnamed.png" width="100%" style="padding: 40px;">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;">AiraScare</h1>
+                    <p style="font-family: Roboto, sans-serif;">Autonomous drone operation offering exciting thrill rides.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-out" data-aos-duration="2000" style="padding-top: 100px;padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 38px;">Narrowing our focus</h1>
+                    <p class="text-center" style="font-family: Roboto, sans-serif;font-size: 20px;">After our initial brainstorm in which we branched out and ideated eight different concepts framed around our research on autonomous drones we decided to further explore AiraSolo, AiraShare, AiraScenic, AiraDrop and AiraHealth. We felt
+                        that these concepts had enough breadth for us to experiment with a variety of user interfaces and interactions to help later inform our design choices for our final chosen concept.<br></p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;">Methods</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/Storyboard.png" width="100%" style="padding: 40px;">
+                        <figcaption class="figure-caption" style="font-family: Roboto, sans-serif;font-size: 30px;">Storyboards</figcaption>
+                    </figure>
+                    <p style="font-family: Roboto, sans-serif;">Easily and quickly visualise a user's experience with a product or service and how they interact with it over time, highlighting what’s really important and the true needs of a user.</p>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/User%20Stories.png" width="100%" style="padding: 40px;">
+                        <figcaption class="figure-caption" style="font-size: 30px;font-family: Roboto, sans-serif;">User Stories</figcaption>
+                    </figure>
+                    <p style="font-family: Roboto, sans-serif;">Describes the type of user, what they want and why. Creates a simplified description of a user requirement and allows for more empathic design.<br></p>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/User%20flows.png" width="100%" style="padding: 40px;">
+                        <figcaption class="figure-caption" style="font-family: Roboto, sans-serif;font-size: 30px;">User Flows</figcaption>
+                    </figure>
+                    <p style="font-family: Roboto, sans-serif;">Focuses on what the user needs to get done and how to deliver that in the most effective manner possible. This allowed us to design a better interface with the user at the heart of the design process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 50px;font-weight: bold;">AiraSolo V0</h1>
+                    <p style="font-family: Roboto, sans-serif;">We conducted these methods on all our ideas, here is a sample of what it looked like from the perspective of AiraSolo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-2">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/unnamed.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/unnamed-8.png" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/solo%20v0%20flow.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-2" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 style="font-size: 30px;font-family: Roboto, sans-serif;font-weight: bold;">Reflection of Process</h1>
+                    <p style="font-size: 20px;font-family: Roboto, sans-serif;">The methods we used in this section were successful in allowing us to quickly test the feasibility of our initial concepts. By exploring the user requirements through storyboarding, user flows and user stories we were able to gain
+                        a much clearer understanding of the functionality of each concept. Only once we understood this were we then able to consider which concepts we would actually be able to test with suitable participants. This was important as usability
+                        testing is only valuable if participants are representative of actual users. This process was highly beneficial to us, allowing us to test our concepts without spending too much time or resources.&nbsp;<br></p>
+                </div>
+                <div class="col-md-4">
+                    <h1 style="font-size: 30px;font-family: Roboto, sans-serif;font-weight: bold;">AiraHealth will not Progress</h1>
+                    <p style="font-size: 18px;font-family: Roboto, sans-serif;">After further exploring these five concepts through storyboarding, user flows and user stories to further understand the user requirements and what functionality the user interface would have to support we decided not to progress AiraHealth
+                        into the next round of paper prototyping. We made this decision as our exploration of this concept made it clear to us that we lacked the background knowledge in this area and had limited access to appropriate participants which
+                        therefore would have hindered usability testing.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" id="v1" style="font-family: Roboto, sans-serif;font-weight: bold;font-size: 60px;">Low fidelity Paper Prototypes V1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Aim</h1>
+                    <p style="font-family: Roboto, sans-serif;">Test a variety of interface styles using four different concepts to gain a high level understanding of what types of interfaces user’s find intuitive.<br></p>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Method</h1>
+                    <p style="font-family: Roboto, sans-serif;"><strong><em>Think Aloud Testing</em></strong> - Observe and listen to user’s interacting with an interface to understand what the pain points are and how to address them. Paper prototyping was used at this stage. We heavily asked for
+                        suggestions and had an open ended approach to further explore the opportunity space and identify further features for development in later iterations.&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 50px;font-weight: bold;">AiraSolo V1</h1>
+                    <p style="font-family: Roboto, sans-serif;">We conducted these tests on all our ideas, here is a sample from the perspective of AiraSolo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-3">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/aira%20v1%20screens.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-3" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>User Testing Photos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-4" style="padding-bottom: 20px;">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.26.48%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.27.03%20pm.png" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.27.13%20pm.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-4" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-4" data-slide-to="1"></li>
+                            <li data-target="#carousel-4" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-5">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-28%20at%204.55.18%20pm.png" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-28%20at%204.55.25%20pm.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-5" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-5" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Evaluation Synthesis</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Better placement of the change number of passengers button<br><br>Clearer iconography to identify AiraCraft’s on the map<br><br>Explain ‘Pick Up’ and ‘Drop Off’ better or change copy<br><br>Ability to toggle the visibility of AiraCraft’s
+                        on the map whilst flying<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 40px;">Reflection of the Process</h1>
+                    <p style="font-size: 20px;">This was our initial round of think aloud testing in which we tested four different concepts with four participants. They were relatively unstructured usability testing sessions with only a small number of set tasks, we placed the
+                        emphasis on trialling the concepts with participants to understand not just pain points. We filmed all tests and then reviewed the footage to take complete our observations and analysis. Whilst effective, this method was time consuming
+                        and we decided that in the next round we would also be taking notes throughout the testing to help speed up the process. Overall it we feel that it was a successful initial round of usability testing which we learnt a lot from.<br></p>
+                </div>
+                <div class="col-md-4">
+                    <h2 style="font-family: Roboto, sans-serif;">Iteration Recommendations</h2>
+                    <p style="font-family: Roboto, sans-serif;font-size: 18px;">Recommendation for the next round of AiraSolo iterations will be to change the placement of the passengers button so that users are able to select the number of passengers. Also to choose iconography that better depicts AiraCraft’s
+                        and illustrates clearly what ‘Pick Up’ and ‘Drop Off’ mean. The ability to toggle the visibility of AiraCrafts has also been noted as a recommendation with usability feedback mixed with some users enjoying it whilst others felt
+                        anxious about seeing this information.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" id="v2" style="font-family: Roboto, sans-serif;font-weight: bold;font-size: 60px;">Low fidelity Paper Prototypes V2</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Aim</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Test two prototypes with similar functionality but vastly different interface styles to learn how users interact with these different interaction models and how to apply them in the next round of iteration.<br></p>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Method</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;"><strong><em>Think Aloud Testing</em></strong> - Observe and listen to user’s interacting with an interface to understand what the pain points are and how to address them. Paper prototyping was used at this stage. <br><br><strong><em>A/B Testing</em></strong>                        - Testing two different versions of the same product, to decide which one is more suitable for a specific user need. Shared screens between AiraSolo and AiraShare were strategically made with different interaction systems (card
+                        and circular) to test our assumptions and explore innovative UI.&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 50px;font-weight: bold;">AiraSolo V2</h1>
+                    <p style="font-family: Roboto, sans-serif;">We conducted these tests on all our ideas, here is a sample from the perspective of AiraSolo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" id="carousel-6">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-28%20at%205.49.48%20pm.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-6" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-6" data-slide-to="0" class="active"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>User Testing Photos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-4" style="padding-bottom: 20px;">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-28%20at%205.52.14%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-4" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-7">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Airasolo%202%20results%202.png" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Airasolo%202%20results.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-7" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-7" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-7" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-7" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Evaluation Synthesis</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Iconography for the AiraCraft’s needs further refinement<br><br>The home screen search button was fairly intuitive but may be unnecessary<br><br>Need to provide duration for each leg of the journey on the route overview<br><br>Swiping
+                        through selection menus for each leg of the journey is tedious and cumbersome<br><br>The compass wayfinding needs clearer arrows to guide users&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 40px;">Reflection of the Process</h1>
+                    <p style="font-size: 20px;">This round of usability testing was a lot more streamlined as we were only testing two concepts. As we had refined our paper prototypes with the intention of testing two very different UI layouts we created a set of concrete tasks
+                        and a series of think aloud tables to make it easier to analyse comparatively. We found this to more efficient than reviewing footage which we found to be too time consuming in the last round. By comparing the consistent screens
+                        across the two different interfaces we were able to understand user’s mental models and how we could explore bringing more intuitive card features into AiraSolo to potentially make the content more digestible.<br></p>
+                </div>
+                <div class="col-md-4">
+                    <h2 style="font-family: Roboto, sans-serif;">Iteration Recommendations</h2>
+                    <p style="font-family: Roboto, sans-serif;font-size: 18px;">The removal of the start screen was recommended as it simply added an extra button to click and instead could be implemented as a splash screen animation. Another recommendation was to consolidate the repetitive swipe selection of
+                        each leg of the journey into one screen as users found it frustrating. As the next iteration is digital it was also recommended to add a highlight colour to draw attention and clearly illustrate features such as the progress tracker
+                        bar which was not recognised well in testing.&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" id="v3" style="font-family: Roboto, sans-serif;font-weight: bold;font-size: 60px;">Low fidelity Prototypes V3</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Aim</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">Test two versions of the same interface using a variety of qualitative and quantitative methods to learn which aspects were more successful, to iterate into our final interface.&nbsp;<br></p>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Method</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;"><strong><em>Contextual Think Aloud Testing</em></strong> - Observe and listen to user’s interacting with an interface to understand what the issues are and how to address them. For this round, we placed all the prototypes on invision
+                        and used our phones for walkthroughs. To give further context, we gave users a background story &amp; persona and brought them outside into the rain to test navigation and wayfinding in real environment scenarios.<br><br><strong><em>A/B Testing</em></strong>                        - Testing two different versions of the same product, to decide which one is more suitable for a specific user need. We developed two solutions for AiraSolo with varying features to evaluate assumptions we made before creating
+                        the final low fidelity prototype. <br><br><strong><em>Heuristic Evaluation</em></strong> - Identify usability problems in the UI using a set of design principles in order to find errors. We used Nielsen’s Heuristics as a framework.<br><br><strong><em>System Usability Scale</em> </strong>-
+                        An inexpensive, effective survey used for assessing the usability of a product or interface and identify issues. This provided a level of quantitative data for analysis of our A/B testing.<br><br><strong><em>User Experience Questionnaire (Short)</em></strong><em> - </em>Quickly
+                        assess the experience of the users of interactive products to facilitate iteration. This provided a level of quantitative data for analysis of our A/B testing.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 50px;font-weight: bold;">AiraSolo V3A + V3B</h1>
+                    <p style="font-family: Roboto, sans-serif;">This phase of testing was conducted on two UI designs; both are displayed below</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-8">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Airasolo%20screens%20v3a.png" alt="Slide Image">
+                                <div class="carousel-caption">
+                                    <h3 style="color: rgb(0,0,0);font-size: 30px;font-family: Roboto, sans-serif;">V3A</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/airasolo%20screens%20v3b.png" alt="Slide Image">
+                                <div class="carousel-caption">
+                                    <h3 style="font-size: 30px;color: rgb(0,0,0);">V3B</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-8" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-8" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-8" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-8" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>User Testing Photos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-9" style="padding-bottom: 20px;">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.24.56%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.25.16%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.25.28%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.25.52%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.26.05%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.28.03%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Screen%20Shot%202018-10-25%20at%208.27.42%20pm.png" alt="Slide Image" style="padding-bottom: 0px;"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-9" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-9" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-9" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-9" data-slide-to="1"></li>
+                            <li data-target="#carousel-9" data-slide-to="2"></li>
+                            <li data-target="#carousel-9" data-slide-to="3"></li>
+                            <li data-target="#carousel-9" data-slide-to="4"></li>
+                            <li data-target="#carousel-9" data-slide-to="5"></li>
+                            <li data-target="#carousel-9" data-slide-to="6"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-10">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Airasolo%202%20results.png" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Airasolo%202%20results%202.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-10" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-10"
+                                role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-10" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-10" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-family: Roboto, sans-serif;">Evaluation Synthesis</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 20px;">V3A had more complex and confusing navigation layout, it would be better to have the extra features hidden for more ‘expert’ users to customise<br><br>The linear progress tracker on V3B was easier for participants to understand<br><br>V3B
+                        needs to be imply swiping up more clearly to users<br><br>The location of the booking ticket in V3B was inconsistent and confusing whilst in V3A it was explicit<br><br>The progress bar times in V3A were labelled confusingly&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 style="font-family: Roboto, sans-serif;font-size: 40px;">Reflection of the Process</h1>
+                    <p style="font-size: 20px;">In this stage we had two versions of one concept that we wanted to A/B test however as we did not have enough participants each tested both interfaces but we alternated the order in which they completed them to act as a control. In
+                        addition to the think aloud testing we also used the SUS and UEQ questionnaires to collect quantitative results to support our qualitative think alouds and aid our A/B analysis. Overall this round of testing was successful however
+                        after comparing the observations and questionnaire results it was apparent that the difficulty of the tasks were not evenly weighted between V3A and V3B and this may have caused some of the participants to view V3A more favourably
+                        in some aspects.<br></p>
+                </div>
+                <div class="col-md-4">
+                    <h2 style="font-family: Roboto, sans-serif;">Iteration Recommendations</h2>
+                    <p style="font-family: Roboto, sans-serif;font-size: 18px;">In our final iteration of AiraSolo we will move the boarding pass into the swipe up card so that it is consistently located with extra info rather than in the directions bar which was confusing. We also intend a cancel button so that
+                        users can exit from their trip any stage if needed and customise each set of cards specific to each leg. The rating screen also had recommendations to remove the progress line as it was redundant and to center and make larger the
+                        star rating system. We also will provide feedback that a rating has been submitted by incorporating the time saved this trip stats in a thank you message.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" id="v4" style="font-size: 60px;font-family: Roboto, sans-serif;font-weight: bold;">Low fidelity Prototype V4</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Final Low Fidelity Design - Screen Flow</h1>
+                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-11" style="padding-bottom: 100px;">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/aira%20v4%20screenflow.png" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-11" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-11"
+                                role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-11" data-slide-to="0" class="active"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px;font-family: Roboto, sans-serif;padding-bottom: 20px;">Screen developments</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: Roboto, sans-serif;">Search</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade" style="padding-bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/Airasolo%20search.png" width="100%" style="padding-bottom: 50px;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: Roboto, sans-serif;">Route Overview</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/airasolo%20overview.png" width="100%" style="padding-bottom: 50px;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: Roboto, sans-serif;">Navigation</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/airasolo%20nav.png" width="100%" style="padding-bottom: 200px;"></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="padding-bottom: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 style="font-family: Roboto, sans-serif;">Reflection on V4</h1>
+                    <p style="font-size: 20px;font-family: Roboto, sans-serif;">This iterative process was very intense and fast paced but very beneficial for all of us in honing our usability testing skills and how best to facilitate user testing in the future. Our user driven focus was pivotal to our rapid prototyping
+                        as we documented and synthesised all feedback given, iterating upon recommendations at every round of testing. We also learnt a lot about the balance between providing enough contextual information with our prototypes in order
+                        to convey our ideas at such a low fidelity. Overall this process has been highly rewarding and we look forward to conducting more usability testing in the future as insights gained from them are extremely helpful.<br></p>
+                </div>
+                <div class="col-md-4">
+                    <h1 style="font-family: Roboto, sans-serif;">Next Steps</h1>
+                    <p style="font-family: Roboto, sans-serif;font-size: 18px;">Our next steps will be to increase the fidelity of our prototype and then conduct another round of usability testing using heuristic evaluations and the think aloud method and potentially set up remote testing so that more quantitative
+                        data can be collected. From synthesising the results of our testing we then intend to iterate again and move into the interactive prototyping phase. If time allows it would be greatly beneficial for us to conduct more think aloud
+                        testing but if not we will utilize heuristic evaluations to iterate our design until we feel it offers to most complete user experience.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="font-family: Roboto, sans-serif;font-weight: bold;font-size: 60px;padding-bottom: 20px;">Aira High Fidelity Prototype</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="padding-bottom: 200px;"><iframe width="1195" height="672" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/HCejsCG19pk?showinfo=0&amp;rel=0" style="margin: 0px;margin-left: -4%;"></iframe></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="reflection" style="font-size: 50px;font-family: Roboto, sans-serif;font-weight: bold;">High Fidelity Redesign Reflection</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="padding-bottom: 50px;">
+                    <p style="font-size: 20px;font-family: Roboto, sans-serif;">This iteration of our design was the result of our bold decision to overhaul the circular design of our previous iterations, and replace it with the card-based UI we experimented with in our testing of the AiraShare concept. It retains
+                        all the functionality of our previous AiraSolo design, including compass navigation, but removes a lot of unused white space from the screen in order to provide the user with a cleaner and more complete experience.<br><br>In our
+                        metamorphosis into this design we experimented with several UI designs, for settings menus, trip selection and even search suggestions; everything was overhauled and revised for peak usability according to the data we had gathered
+                        during our user testing and evaluations.&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 align-self-center" style="margin-right: 0px;margin-left: 40%;"><a class="btn btn-dark btn-lg" role="button" href="https://perrindesign.github.io/design-portfolio/companion.html" data-bs-hover-animate="jello" style="margin-left: 0px;padding-bottom: 0px;margin-bottom: 100px;width: 200px;height: 50px;">Companion Site</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+
+</html>
